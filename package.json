@@ -1,0 +1,17 @@
+{
+  "name": "alhuda-center-directus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx directus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "directus": "^11.12.0",
+    "mysql2": "^3.15.2"
+  }
+}
