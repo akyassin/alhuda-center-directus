@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@directus/storage-driver-cloudinary": "^12.0.9",
     "directus": "^11.12.0",
     "mysql2": "^3.15.2"
   }
