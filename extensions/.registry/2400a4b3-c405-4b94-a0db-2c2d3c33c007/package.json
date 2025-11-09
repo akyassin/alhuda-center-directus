@@ -1,0 +1,49 @@
+{
+	"name": "directus-extension-find-duplicates",
+	"homepage": "https://github.com/FazCodeFR/directus-extension-find-duplicates#readme",
+	"description": "Find duplicates in Directus collections based on specified fields.",
+	"author": "FazCode",
+	"license": "MIT",
+	"version": "1.0.5",
+	"type": "module",
+	"icon": "search",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-module",
+		"find duplicates",
+		"duplicate items",
+		"directus duplicates"
+	],
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "module",
+		"path": "dist/index.js",
+		"source": "src/index.js",
+		"host": ">=10.10.10"
+	},
+	"scripts": {
+		"start": "vite",
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"validate": "directus-extension validate"
+	},
+	"dependencies": {
+		"vue-i18n": "^11.1.9"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "14.0.0",
+		"vue": "^3.5.17"
+	},
+	"main": "src/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FazCodeFR/directus-extension-find-duplicates.git"
+	},
+	"bugs": {
+		"url": "https://github.com/FazCodeFR/directus-extension-find-duplicates/issues"
+	}
+}

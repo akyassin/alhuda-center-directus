@@ -1,0 +1,43 @@
+{
+  "name": "directus-extension-rapidocus",
+  "description": "View any OpenAPI Specification in your Directus and customize the appearance.",
+  "author": "Pavel Belanchuk",
+  "icon": "temp_preferences_eco",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belanchuk/directus-extension-rapidocus.git"
+  },
+  "version": "1.4.2",
+  "keywords": [
+    "openapi",
+    "rapidoc",
+    "directus",
+    "directus-extension",
+    "directus-extension-module"
+  ],
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "module",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.10.0",
+    "sandbox": {
+      "enabled": true,
+      "requestedScopes": {}
+    }
+  },
+  "scripts": {
+    "dev": "directus-extension build -w --no-minify --sourcemap",
+    "build": "directus-extension build",
+    "link": "directus-extension link"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "11.0.4",
+    "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "rapidoc": "^9.3.4"
+  }
+}
